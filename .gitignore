@@ -18,6 +18,10 @@ maps/**/Tile_*.data
 tile_*.data
 maps/**/tile_*.data
 
+# Downloaded source tiles (reusable local cache)
+cache/
+routes/source/
+
 # OS/editor clutter
 Thumbs.db
 .DS_Store

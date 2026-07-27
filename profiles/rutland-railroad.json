@@ -1,0 +1,58 @@
+{
+  "schemaVersion": 1,
+  "id": "rutland-railroad",
+  "displayName": "Rutland Railroad",
+  "description": "The Rutland's Vermont main line: Bellows Falls over Mount Holly summit to Rutland, north through the Otter Creek valley to Burlington, and the Island Line across the Lake Champlain causeways to Alburgh. Terrain export follows a sparse railway corridor approximately ten 500 m tiles wide. The Bennington leg, Chatham branch, and Ogdensburg division are outside the map budget and are clipped by the line bounds.",
+  "origin": {
+    "latitude": 44.057,
+    "longitude": -72.872,
+    "eastBiasMeters": 0.0,
+    "northBiasMeters": 0.0
+  },
+  "terrain": {
+    "tileDimensionMeters": 500.0,
+    "mapboxZoom": 15,
+    "mapboxTileSize": 256,
+    "heightMinMeters": 500.0,
+    "heightMaxMeters": 1500.0,
+    "heightResolution": 513
+  },
+  "heightOffset": {
+    "mode": "uniform",
+    "meters": 477.0,
+    "calibration": {
+      "report": "corridor probe (AWS terrarium z13) over the sparse corridor tiles, not the demScan rectangle",
+      "sourceMinimumMeters": 28.1,
+      "sourceMaximumMeters": 987.1,
+      "generatedAtUtc": "2026-07-19T00:00:00+00:00",
+      "note": "Lake Champlain (~28 m) shifts to ~505 m; Okemo above Ludlow (~987 m) shifts to ~1464 m. The demScan rectangle contains Killington (~1291 m), which sits outside the corridor, so scan_dem's rectangular feasibility check would reject a uniform offset that the actual corridor comfortably satisfies. Do not overwrite this offset from a rectangle scan."
+    }
+  },
+  "demScan": {
+    "bounds": {
+      "westLongitude": -73.37,
+      "southLatitude": 43.09,
+      "eastLongitude": -72.4,
+      "northLatitude": 45.0
+    },
+    "zoom": 15,
+    "targetMinMeters": 505.0,
+    "targetMaxMeters": 1495.0
+  },
+  "routeFootprint": {
+    "geoJson": "routes/rutland-railroad.geojson",
+    "corridorWidthTiles": 10.0,
+    "lines": [
+      {
+        "relationId": 9200744,
+        "railway": ["rail", "abandoned", "disused", "preserved"],
+        "bounds": {
+          "westLongitude": -73.37,
+          "southLatitude": 43.09,
+          "eastLongitude": -72.4,
+          "northLatitude": 44.99
+        }
+      }
+    ]
+  }
+}

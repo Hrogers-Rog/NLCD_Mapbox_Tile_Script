@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "profile": "C:\\Hrogers_Railroader_mods_Projects\\NLCD_Mapbox_Tile_Script\\profiles\\rutland-railroad.json",
+  "packageId": "rutland-railroad",
+  "packageDirectory": "C:\\Hrogers_Railroader_mods_Projects\\NLCD_Mapbox_Tile_Script\\maps\\RutlandRailroad",
+  "mapDirectory": "C:\\Hrogers_Railroader_mods_Projects\\NLCD_Mapbox_Tile_Script\\maps\\RutlandRailroad\\Map",
+  "gameTileBounds": {
+    "xMin": -80,
+    "xMax": 74,
+    "yMin": -212,
+    "yMax": 211
+  },
+  "tileCount": 5193,
+  "filenameMode": "signed",
+  "heightOffsetMeters": 477.0,
+  "resumeCommand": "python get_tile_list.py \"C:\\Hrogers_Railroader_mods_Projects\\NLCD_Mapbox_Tile_Script\\maps\\RutlandRailroad\\Map\\Map.json\" --profile rutland-railroad --config Tile_Script\\config.json --cache-dir cache --output-dir \"C:\\Hrogers_Railroader_mods_Projects\\NLCD_Mapbox_Tile_Script\\maps\\RutlandRailroad\\Map\" --skip-existing --workers 8"
+}

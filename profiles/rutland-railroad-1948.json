@@ -1,0 +1,187 @@
+{
+  "schemaVersion": 1,
+  "id": "rutland-railroad-1948",
+  "displayName": "Rutland Railroad 1945-1948",
+  "description": "The Rutland Railroad's 1945-1948 Vermont operating core: Burlington to Rutland, Rutland to Bellows Falls, Rutland to North Bennington and Bennington, plus the complete period Clarendon & Pittsford marble network. Terrain follows a six-tile-wide sparse railway corridor so a uniform offset can preserve the 505-1495 m game range.",
+  "origin": {
+    "latitude": 43.678728,
+    "longitude": -72.8383,
+    "eastBiasMeters": 0.0,
+    "northBiasMeters": 0.0
+  },
+  "terrain": {
+    "tileDimensionMeters": 500.0,
+    "mapboxZoom": 15,
+    "mapboxTileSize": 256,
+    "heightMinMeters": 500.0,
+    "heightMaxMeters": 1500.0,
+    "heightResolution": 513
+  },
+  "heightOffset": {
+    "mode": "uniform",
+    "meters": 505.0,
+    "calibration": {
+      "report": "..\\reports\\rutland-railroad-1948-dem-scan.json",
+      "sourceMinimumMeters": 0.0,
+      "sourceMaximumMeters": 824.900390625,
+      "generatedAtUtc": "2026-07-20T05:08:12.984963+00:00"
+    }
+  },
+  "demScan": {
+    "bounds": {
+      "westLongitude": -73.27,
+      "southLatitude": 42.86,
+      "eastLongitude": -72.42,
+      "northLatitude": 44.5
+    },
+    "zoom": 15,
+    "targetMinMeters": 505.0,
+    "targetMaxMeters": 1495.0
+  },
+  "routeFootprint": {
+    "geoJson": "routes/rutland-railroad-1948.geojson",
+    "corridorWidthTiles": 6.0,
+    "lines": [
+      {
+        "relationId": 9200744,
+        "railway": [
+          "rail",
+          "abandoned",
+          "disused",
+          "preserved"
+        ],
+        "bounds": {
+          "westLongitude": -73.27,
+          "southLatitude": 43.1,
+          "eastLongitude": -72.42,
+          "northLatitude": 44.5
+        }
+      }
+    ],
+    "ways": [
+      {
+        "cacheKey": "rutland-1948-br-bennington",
+        "bounds": {
+          "westLongitude": -73.27,
+          "southLatitude": 42.86,
+          "eastLongitude": -72.9,
+          "northLatitude": 43.62
+        },
+        "tags": {
+          "railway": [
+            "rail",
+            "abandoned",
+            "disused"
+          ],
+          "name": [
+            "B&R Main Line",
+            "Vermont Railway - B&R Subdivision",
+            "Bennington Branch"
+          ]
+        }
+      }
+    ],
+    "manualLines": [
+      {
+        "name": "Clarendon & Pittsford: Florence quarry belt",
+        "source": "Rutland Historical Society Quarterly, Volume XI No. 3 (1981), cover map and period mileage table",
+        "accuracy": "terrain-footprint planning only; not a track centerline",
+        "coordinates": [
+          [
+            -73.0605,
+            43.7164
+          ],
+          [
+            -73.072,
+            43.716
+          ],
+          [
+            -73.083,
+            43.722
+          ],
+          [
+            -73.096,
+            43.727
+          ]
+        ]
+      },
+      {
+        "name": "Clarendon & Pittsford: Florence-Hollister Quarry",
+        "source": "Rutland Historical Society Quarterly, Volume XI No. 3 (1981), cover map; surviving OSM right-of-way",
+        "accuracy": "terrain-footprint planning only; not a track centerline",
+        "coordinates": [
+          [
+            -73.0605,
+            43.7164
+          ],
+          [
+            -73.0671,
+            43.7174
+          ],
+          [
+            -73.0693,
+            43.7352
+          ]
+        ]
+      },
+      {
+        "name": "Clarendon & Pittsford: Florence-Proctor-Center Rutland-West Rutland",
+        "source": "Rutland Historical Society Quarterly, Volume XI No. 3 (1981), cover map and period mileage table",
+        "accuracy": "terrain-footprint planning only; not a track centerline",
+        "coordinates": [
+          [
+            -73.0605,
+            43.7164
+          ],
+          [
+            -73.046,
+            43.687
+          ],
+          [
+            -73.0353,
+            43.661
+          ],
+          [
+            -73.026,
+            43.626
+          ],
+          [
+            -73.0115,
+            43.6048
+          ],
+          [
+            -73.025,
+            43.596
+          ],
+          [
+            -73.046,
+            43.5932
+          ],
+          [
+            -73.075,
+            43.604
+          ]
+        ]
+      },
+      {
+        "name": "Clarendon & Pittsford: Center Rutland-Rutland",
+        "source": "Rutland Historical Society Quarterly, Volume XI No. 3 (1981), cover map and period mileage table",
+        "accuracy": "terrain-footprint planning only; not a track centerline",
+        "coordinates": [
+          [
+            -73.0115,
+            43.6048
+          ],
+          [
+            -72.997,
+            43.6052
+          ],
+          [
+            -72.9817,
+            43.6058
+          ]
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "Id": "rutland-railroad-1948",
+  "DisplayName": "Rutland Railroad 1945-1948",
+  "Author": "FUSE",
+  "Version": "0.1.0",
+  "ManagerVersion": "0.27.10",
+  "GameVersion": "2025.1",
+  "Requirements": [
+    "FUSE"
+  ],
+  "LoadAfter": [
+    "FUSE"
+  ],
+  "FuseDataFiles": [
+    "rutland-railroad-1948.fuse.json",
+    "rutland-railroad-1948-tracks.fuse.json"
+  ]
+}

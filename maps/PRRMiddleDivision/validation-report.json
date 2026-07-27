@@ -1,0 +1,39 @@
+{
+  "schemaVersion": 1,
+  "generatedAtUtc": "2026-07-19T07:11:42.239956+00:00",
+  "mapJson": "C:\\Hrogers_Railroader_mods_Projects\\NLCD_Mapbox_Tile_Script\\maps\\PRRMiddleDivision\\Map\\Map.json",
+  "valid": true,
+  "manifestTileCount": 6565,
+  "uniqueManifestTileCount": 6565,
+  "duplicateManifestEntries": 0,
+  "terrainFileCount": 6565,
+  "missingTileCount": 0,
+  "extraTileCount": 0,
+  "invalidFilenameCount": 0,
+  "invalidFileCount": 0,
+  "totalBytes": 749794589,
+  "height": {
+    "minimumMeters": 518.84489204242,
+    "minimumTile": [
+      -176,
+      -11
+    ],
+    "maximumMeters": 1320.8896009765774,
+    "maximumTile": [
+      -215,
+      -13
+    ],
+    "clippedPixelCount": 0
+  },
+  "seams": {
+    "sharedEdgeCount": 12315,
+    "maximumHeightDifferenceU16": 0,
+    "maximumHeightDifferenceMeters": 0.0,
+    "alphaMismatchSampleCount": 0
+  },
+  "samples": {
+    "missingTiles": [],
+    "extraTiles": [],
+    "invalidFiles": []
+  }
+}

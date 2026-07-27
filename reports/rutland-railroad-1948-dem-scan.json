@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 1,
+  "generatedAtUtc": "2026-07-20T05:08:12.984963+00:00",
+  "profile": {
+    "id": "rutland-railroad-1948",
+    "displayName": "Rutland Railroad 1945-1948",
+    "path": "C:\\Hrogers_Railroader_mods_Projects\\NLCD_Mapbox_Tile_Script\\profiles\\rutland-railroad-1948.json"
+  },
+  "footprint": {
+    "kind": "railroaderTileList",
+    "path": "C:\\Hrogers_Railroader_mods_Projects\\NLCD_Mapbox_Tile_Script\\routes\\rutland-railroad-1948-tiles.json",
+    "railroaderTileCount": 3541,
+    "bounds": {
+      "westLongitude": -73.28007253147128,
+      "southLatitude": 42.89122721249921,
+      "eastLongitude": -72.41519391352048,
+      "northLatitude": 44.511228832500834
+    }
+  },
+  "source": {
+    "tileset": "mapbox.terrain-rgb",
+    "zoom": 15,
+    "tileSize": 256,
+    "tileRange": {
+      "xMin": 9713,
+      "xMax": 9792,
+      "yMin": 11850,
+      "yMax": 12054
+    },
+    "tileCount": 1527,
+    "cacheHits": 1523,
+    "downloads": 4,
+    "cacheDirectory": "C:\\Hrogers_Railroader_mods_Projects\\NLCD_Mapbox_Tile_Script\\cache",
+    "sampleCount": 74332588
+  },
+  "elevation": {
+    "sourceMinimumMeters": 0.0,
+    "sourceMinimumLocation": {
+      "longitude": -73.12502145767212,
+      "latitude": 43.84243569070215
+    },
+    "sourceMaximumMeters": 824.900390625,
+    "sourceMaximumLocation": {
+      "longitude": -73.031165599823,
+      "latitude": 43.26922187336377
+    }
+  },
+  "targetEncoding": {
+    "absoluteMinimumMeters": 500.0,
+    "absoluteMaximumMeters": 1500.0,
+    "safeMinimumMeters": 505.0,
+    "safeMaximumMeters": 1495.0
+  },
+  "heightOffset": {
+    "minimumRequiredMeters": 505.0,
+    "maximumAllowedMeters": 670.099609375,
+    "recommendedMeters": 505.0,
+    "shiftedMinimumMeters": 505.0,
+    "shiftedMaximumMeters": 1329.900390625,
+    "lowerHeadroomMeters": 0.0,
+    "upperHeadroomMeters": 165.099609375,
+    "uniformOffsetFeasible": true
+  },
+  "productionReady": true
+}

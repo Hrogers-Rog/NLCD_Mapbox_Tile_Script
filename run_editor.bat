@@ -17,6 +17,8 @@ if "!PYTHON!"=="" (
     exit /b 1
 )
 
+set ACTIVE_PROFILE=bushnell-whittier
+
 :: ============================================================
 :: MENU
 :: ============================================================
@@ -27,18 +29,74 @@ echo   TERRAIN TILE GENERATOR
 echo ============================================================
 
 call :SHOW_TOKEN_STATUS
+echo   Map profile: !ACTIVE_PROFILE!
 
 echo.
 echo   1. Generate tile area
 echo   2. Generate single tile
 echo   3. Setup  ^(libraries + Mapbox token^)
+echo   4. Select map profile
+echo   5. Estimate / run DEM offset calibration
 echo   0. Exit
 echo.
 set /p CHOICE="  Choose: "
 if "!CHOICE!"=="1" goto AREA
 if "!CHOICE!"=="2" goto SINGLE
 if "!CHOICE!"=="3" goto SETUP
+if "!CHOICE!"=="4" goto SELECT_PROFILE
+if "!CHOICE!"=="5" goto DEM_SCAN
 if "!CHOICE!"=="0" exit /b 0
+goto MENU
+
+:: ============================================================
+:: Estimate and optionally run the profile DEM calibration
+:: ============================================================
+:DEM_SCAN
+cls
+echo ============================================================
+echo   DEM OFFSET CALIBRATION
+echo ============================================================
+echo.
+echo   Profile: !ACTIVE_PROFILE!
+echo.
+!PYTHON! scan_dem.py --profile !ACTIVE_PROFILE! --estimate-only
+if not !errorlevel!==0 (
+    echo.
+    echo   This profile is not ready for a DEM scan.
+    pause
+    goto MENU
+)
+echo.
+echo   The full scan downloads only missing source tiles, writes a
+echo   calibration report, and updates the profile only if the uniform
+echo   offset fits safely inside the terrain encoding range.
+echo.
+set /p RUN_SCAN="  Run the resumable production scan now? [y/N]: "
+if /i not "!RUN_SCAN!"=="y" goto MENU
+echo.
+!PYTHON! scan_dem.py --profile !ACTIVE_PROFILE! --confirm-large-scan --update-profile
+echo.
+pause
+goto MENU
+
+:: ============================================================
+:: Select map profile for this launcher session
+:: ============================================================
+:SELECT_PROFILE
+cls
+echo ============================================================
+echo   SELECT MAP PROFILE
+echo ============================================================
+echo.
+echo   1. Bushnell / Whittier ^(existing settings^)
+echo   2. PRR Middle Division + East Broad Top
+echo   3. Rutland Railroad 1945-1948
+echo   0. Cancel
+echo.
+set /p PROFILE_CHOICE="  Choose: "
+if "!PROFILE_CHOICE!"=="1" set ACTIVE_PROFILE=bushnell-whittier
+if "!PROFILE_CHOICE!"=="2" set ACTIVE_PROFILE=prr-middle-division
+if "!PROFILE_CHOICE!"=="3" set ACTIVE_PROFILE=rutland-railroad-1948
 goto MENU
 
 :: ============================================================
@@ -104,7 +162,7 @@ if exist "config.json" (
     if defined RAW (
         set CURRENT_TOKEN=!RAW:"=!
         set CURRENT_TOKEN=!CURRENT_TOKEN: =!
-        echo   Current saved token: !CURRENT_TOKEN!
+        echo   Current saved token: configured ^(value hidden^)
     ) else (
         echo   No token currently saved.
     )
@@ -128,15 +186,28 @@ goto MENU
 :: ============================================================
 :ASK_OFFSET
 set OFFSET_ARGS=
-set /p NO_OFF="  Disable height offset ramp? [y/N]: "
-if /i "!NO_OFF!"=="y" (
+echo   Height offset comes from profile: !ACTIVE_PROFILE!
+set /p OVERRIDE_OFFSET="  Override the profile height offset for this run? [y/N]: "
+if /i not "!OVERRIDE_OFFSET!"=="y" goto :EOF
+echo.
+echo   1. Disable height offset
+echo   2. Uniform offset in metres
+echo   3. Linear X ramp ^(legacy Bushnell controls^)
+set /p OFFSET_MODE="  Choose override: "
+if "!OFFSET_MODE!"=="1" (
     set OFFSET_ARGS=--no-offset
     goto :EOF
 )
-echo   (Leave blank to use defaults: east=-66  west=-98  max=40m^)
-set /p OEX="  Offset east X  [default -66]: "
-set /p OWX="  Offset west X  [default -98]: "
-set /p OMX="  Offset max metres [default 40]: "
+if "!OFFSET_MODE!"=="2" (
+    set /p UNIFORM_OFFSET="  Uniform offset metres: "
+    if not "!UNIFORM_OFFSET!"=="" set OFFSET_ARGS=--height-offset !UNIFORM_OFFSET!
+    goto :EOF
+)
+if not "!OFFSET_MODE!"=="3" goto :EOF
+echo   (Leave fields blank to inherit matching profile values.^)
+set /p OEX="  Offset east X: "
+set /p OWX="  Offset west X: "
+set /p OMX="  Offset max metres: "
 if not "!OEX!"=="" set OFFSET_ARGS=!OFFSET_ARGS! --offset-east-x !OEX!
 if not "!OWX!"=="" set OFFSET_ARGS=!OFFSET_ARGS! --offset-west-x !OWX!
 if not "!OMX!"=="" set OFFSET_ARGS=!OFFSET_ARGS! --offset-max !OMX!
@@ -151,15 +222,6 @@ echo ============================================================
 echo   SINGLE TILE
 echo ============================================================
 echo.
-
-set "USE_TOKEN="
-if exist "config.json" (
-    for /f "tokens=1,2 delims=:, " %%A in ('type "config.json" ^| findstr /i "mapbox_token"') do (
-        set "RAW=%%B"
-        set "USE_TOKEN=!RAW:"=!"
-        set "USE_TOKEN=!USE_TOKEN: =!"
-    )
-)
 
 set /p X="  Tile X: "
 set /p Y="  Tile Y: "
@@ -187,10 +249,7 @@ if "!VEG_VAL!"=="" if "!NO_NLCD!"=="" (
 
 call :ASK_OFFSET
 
-set TOKEN_ARG=
-if defined USE_TOKEN set TOKEN_ARG=--token !USE_TOKEN!
-
-set CMD=!PYTHON! get_tile_4.py !X! !Y! --base-x !X! --base-y !Y! !NO_GUTTER! !VEG_ARG! !NO_NLCD! !BLUR_ARG! !OFFSET_ARGS! !TOKEN_ARG!
+set CMD=!PYTHON! get_tile_4.py !X! !Y! --profile !ACTIVE_PROFILE! --base-x !X! --base-y !Y! !NO_GUTTER! !VEG_ARG! !NO_NLCD! !BLUR_ARG! !OFFSET_ARGS!
 echo.
 echo ============================================================
 echo   Command: !CMD!
@@ -215,15 +274,6 @@ echo ============================================================
 echo   TILE AREA
 echo ============================================================
 echo.
-
-set "USE_TOKEN="
-if exist "config.json" (
-    for /f "tokens=1,2 delims=:, " %%A in ('type "config.json" ^| findstr /i "mapbox_token"') do (
-        set "RAW=%%B"
-        set "USE_TOKEN=!RAW:"=!"
-        set "USE_TOKEN=!USE_TOKEN: =!"
-    )
-)
 
 set /p X0="  X start (inclusive): "
 set /p X1="  X end   (inclusive): "
@@ -257,10 +307,7 @@ if not "!WORKERS_VAL!"=="" set WORKERS_ARG=--workers !WORKERS_VAL!
 
 call :ASK_OFFSET
 
-set TOKEN_ARG=
-if defined USE_TOKEN set TOKEN_ARG=--token !USE_TOKEN!
-
-set CMD=!PYTHON! get_tile_area.py --script get_tile_4.py !X0! !X1! !Y0! !Y1! !NO_GUTTER! !VEG_ARG! !NO_NLCD! !BLUR_ARG! !WORKERS_ARG! !OFFSET_ARGS! !TOKEN_ARG!
+set CMD=!PYTHON! get_tile_area.py --script get_tile_4.py --profile !ACTIVE_PROFILE! !X0! !X1! !Y0! !Y1! !NO_GUTTER! !VEG_ARG! !NO_NLCD! !BLUR_ARG! !WORKERS_ARG! !OFFSET_ARGS!
 
 echo.
 echo ============================================================

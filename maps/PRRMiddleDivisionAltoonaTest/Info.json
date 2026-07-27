@@ -1,0 +1,17 @@
+{
+  "Id": "prr-middle-division-altoona-test",
+  "DisplayName": "PRR Middle Division - Altoona Terrain Test",
+  "Author": "FUSE",
+  "Version": "0.1.0",
+  "ManagerVersion": "0.27.10",
+  "GameVersion": "2025.1",
+  "Requirements": [
+    "FUSE"
+  ],
+  "LoadAfter": [
+    "FUSE"
+  ],
+  "FuseDataFiles": [
+    "prr-middle-division-altoona-test.fuse.json"
+  ]
+}

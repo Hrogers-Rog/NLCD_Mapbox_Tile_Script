@@ -1,0 +1,53 @@
+{
+  "schemaVersion": 1,
+  "id": "prr-middle-division",
+  "displayName": "PRR Middle Division + East Broad Top",
+  "description": "Johnstown through Altoona to Harrisburg, with the East Broad Top south to Robertsdale/Woodvale. Terrain export follows a sparse railway corridor approximately ten 500 m tiles wide.",
+  "origin": {
+    "latitude": 40.425,
+    "longitude": -77.715,
+    "eastBiasMeters": 8.0,
+    "northBiasMeters": -8.0
+  },
+  "terrain": {
+    "tileDimensionMeters": 500.0,
+    "mapboxZoom": 15,
+    "mapboxTileSize": 256,
+    "heightMinMeters": 500.0,
+    "heightMaxMeters": 1500.0,
+    "heightResolution": 513
+  },
+  "heightOffset": {
+    "mode": "uniform",
+    "meters": 505.0,
+    "calibration": {
+      "report": "..\\reports\\prr-middle-division-dem-scan.json",
+      "sourceMinimumMeters": 0.0,
+      "sourceMaximumMeters": 960.1005859375,
+      "generatedAtUtc": "2026-07-19T06:43:32.529156+00:00"
+    }
+  },
+  "demScan": {
+    "bounds": {
+      "westLongitude": -78.96,
+      "southLatitude": 40.15,
+      "eastLongitude": -76.84,
+      "northLatitude": 40.7
+    },
+    "zoom": 15,
+    "targetMinMeters": 505.0,
+    "targetMaxMeters": 1495.0
+  },
+  "routeFootprint": {
+    "geoJson": "routes/prr-main-ebt.geojson",
+    "corridorWidthTiles": 10.0,
+    "mainLineRelationId": 1402777,
+    "eastBroadTopRelationId": 15547562,
+    "mainLineBounds": {
+      "westLongitude": -78.96,
+      "southLatitude": 40.18,
+      "eastLongitude": -76.84,
+      "northLatitude": 40.7
+    }
+  }
+}

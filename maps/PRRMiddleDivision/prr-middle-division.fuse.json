@@ -1,0 +1,32 @@
+{
+  "schemaVersion": "1.0",
+  "id": "prr-middle-division",
+  "name": "PRR Middle Division + East Broad Top",
+  "author": "FUSE",
+  "description": "A sparse terrain corridor following the PRR main line from Johnstown through Altoona to Harrisburg and the East Broad Top main line to Robertsdale/Woodvale.",
+  "map": {
+    "displayName": "PRR Middle Division + East Broad Top",
+    "description": "DEM-calibrated Pennsylvania terrain in an approximately ten-tile-wide railway corridor, with base Bushnell content suppressed.",
+    "mapFolder": "Map",
+    "suppressBaseWorld": true
+  },
+  "world": {
+    "spawnPoints": [
+      {
+        "name": "PRR Middle Division + East Broad Top Spawn",
+        "position": {
+          "x": -57250.0,
+          "y": 874.0,
+          "z": 10250.0
+        },
+        "rotation": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0
+        },
+        "radius": 3.0,
+        "priority": 1000
+      }
+    ]
+  }
+}

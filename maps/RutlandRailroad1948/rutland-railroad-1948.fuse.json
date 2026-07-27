@@ -1,0 +1,32 @@
+{
+  "schemaVersion": "1.0",
+  "id": "rutland-railroad-1948",
+  "name": "Rutland Railroad 1945-1948",
+  "author": "FUSE",
+  "description": "Rutland Railroad 1945-1948 terrain package generated from the active map profile.",
+  "map": {
+    "displayName": "Rutland Railroad 1945-1948",
+    "description": "The Rutland Railroad's 1945-1948 Vermont operating core: Burlington to Rutland, Rutland to Bellows Falls, Rutland to North Bennington and Bennington, plus the complete period Clarendon & Pittsford marble network. Terrain follows a six-tile-wide sparse railway corridor so a uniform offset can preserve the 505-1495 m game range.",
+    "mapFolder": "Map",
+    "suppressBaseWorld": true
+  },
+  "world": {
+    "spawnPoints": [
+      {
+        "name": "Rutland Railroad 1945-1948 Spawn",
+        "position": {
+          "x": -11525.8,
+          "y": 687.0,
+          "z": -8107.5
+        },
+        "rotation": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0
+        },
+        "radius": 3.0,
+        "priority": 1000
+      }
+    ]
+  }
+}

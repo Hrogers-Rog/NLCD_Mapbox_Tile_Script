@@ -1,0 +1,32 @@
+{
+  "schemaVersion": "1.0",
+  "id": "prr-middle-division-altoona-test",
+  "name": "PRR Middle Division - Altoona Terrain Test",
+  "author": "FUSE",
+  "description": "A 10 by 10 tile terrain and vegetation test centered on Altoona, Pennsylvania.",
+  "map": {
+    "displayName": "PRR Middle Division - Altoona Terrain Test",
+    "description": "DEM-calibrated Pennsylvania terrain with base Bushnell content suppressed.",
+    "mapFolder": "Map",
+    "suppressBaseWorld": true
+  },
+  "world": {
+    "spawnPoints": [
+      {
+        "name": "Altoona Terrain Test Spawn",
+        "position": {
+          "x": -57250.0,
+          "y": 825.0,
+          "z": 10250.0
+        },
+        "rotation": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0
+        },
+        "radius": 3.0,
+        "priority": 1000
+      }
+    ]
+  }
+}

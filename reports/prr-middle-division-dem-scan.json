@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "generatedAtUtc": "2026-07-19T06:43:32.529156+00:00",
+  "profile": {
+    "id": "prr-middle-division",
+    "displayName": "PRR Middle Division + East Broad Top",
+    "path": "C:\\Hrogers_Railroader_mods_Projects\\NLCD_Mapbox_Tile_Script\\profiles\\prr-middle-division.json"
+  },
+  "footprint": {
+    "kind": "geographicRectangle",
+    "bounds": {
+      "westLongitude": -78.96,
+      "southLatitude": 40.15,
+      "eastLongitude": -76.84,
+      "northLatitude": 40.7
+    }
+  },
+  "source": {
+    "tileset": "mapbox.terrain-rgb",
+    "zoom": 15,
+    "tileSize": 256,
+    "tileRange": {
+      "xMin": 9196,
+      "xMax": 9389,
+      "yMin": 12321,
+      "yMax": 12387
+    },
+    "tileCount": 12998,
+    "cacheHits": 9027,
+    "downloads": 3971,
+    "cacheDirectory": "C:\\Hrogers_Railroader_mods_Projects\\NLCD_Mapbox_Tile_Script\\cache",
+    "sampleCount": 831632165
+  },
+  "elevation": {
+    "sourceMinimumMeters": 0.0,
+    "sourceMinimumLocation": {
+      "longitude": -78.75002145767212,
+      "latitude": 40.6999832500632
+    },
+    "sourceMaximumMeters": 960.1005859375,
+    "sourceMaximumLocation": {
+      "longitude": -78.56265306472778,
+      "latitude": 40.288905054105
+    }
+  },
+  "targetEncoding": {
+    "absoluteMinimumMeters": 500.0,
+    "absoluteMaximumMeters": 1500.0,
+    "safeMinimumMeters": 505.0,
+    "safeMaximumMeters": 1495.0
+  },
+  "heightOffset": {
+    "minimumRequiredMeters": 505.0,
+    "maximumAllowedMeters": 534.8994140625,
+    "recommendedMeters": 505.0,
+    "shiftedMinimumMeters": 505.0,
+    "shiftedMaximumMeters": 1465.1005859375,
+    "lowerHeadroomMeters": 0.0,
+    "upperHeadroomMeters": 29.8994140625,
+    "uniformOffsetFeasible": true
+  },
+  "productionReady": true
+}

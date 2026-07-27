@@ -1,0 +1,39 @@
+{
+  "schemaVersion": 1,
+  "generatedAtUtc": "2026-07-20T04:01:38.063855+00:00",
+  "mapJson": "C:\\Hrogers_Railroader_mods_Projects\\NLCD_Mapbox_Tile_Script\\maps\\RutlandRailroad\\Map\\Map.json",
+  "valid": false,
+  "manifestTileCount": 5193,
+  "uniqueManifestTileCount": 5193,
+  "duplicateManifestEntries": 0,
+  "terrainFileCount": 5193,
+  "missingTileCount": 0,
+  "extraTileCount": 0,
+  "invalidFilenameCount": 0,
+  "invalidFileCount": 0,
+  "totalBytes": 420615220,
+  "height": {
+    "minimumMeters": 500.0,
+    "minimumTile": [
+      -66,
+      61
+    ],
+    "maximumMeters": 1457.3357747768368,
+    "maximumTile": [
+      20,
+      -145
+    ],
+    "clippedPixelCount": 34003
+  },
+  "seams": {
+    "sharedEdgeCount": 9755,
+    "maximumHeightDifferenceU16": 0,
+    "maximumHeightDifferenceMeters": 0.0,
+    "alphaMismatchSampleCount": 0
+  },
+  "samples": {
+    "missingTiles": [],
+    "extraTiles": [],
+    "invalidFiles": []
+  }
+}

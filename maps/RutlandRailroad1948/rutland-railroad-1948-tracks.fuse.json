@@ -1,0 +1,23 @@
+{
+  "schemaVersion": "1.0",
+  "id": "rutland-railroad-1948.track-authoring",
+  "name": "Rutland Railroad 1945-1948 Track Graph",
+  "author": "FUSE",
+  "modVersion": "0.1.0",
+  "description": "Runtime bridge for the editor-authored game-graph.json track layer.",
+  "tags": [
+    "legacy-converted",
+    "authoring-source"
+  ],
+  "mixinto": {
+    "target": "game-graph",
+    "sourceFile": "game-graph.json"
+  },
+  "extensions": {
+    "legacyData": {
+      "convertedAtRuntime": true,
+      "sourcePackageId": "rutland-railroad-1948",
+      "supportStatus": "temporary"
+    }
+  }
+}

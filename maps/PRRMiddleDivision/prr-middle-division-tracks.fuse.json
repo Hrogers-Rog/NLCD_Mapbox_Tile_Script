@@ -1,0 +1,23 @@
+{
+  "schemaVersion": "1.0",
+  "id": "prr-middle-division.track-authoring",
+  "name": "PRR Middle Division + East Broad Top Track Graph",
+  "author": "FUSE",
+  "modVersion": "0.1.0",
+  "description": "Runtime bridge for the editor-authored game-graph.json track layer.",
+  "tags": [
+    "legacy-converted",
+    "authoring-source"
+  ],
+  "mixinto": {
+    "target": "game-graph",
+    "sourceFile": "game-graph.json"
+  },
+  "extensions": {
+    "legacyData": {
+      "convertedAtRuntime": true,
+      "sourcePackageId": "prr-middle-division",
+      "supportStatus": "temporary"
+    }
+  }
+}

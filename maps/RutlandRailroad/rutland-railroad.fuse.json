@@ -1,0 +1,32 @@
+{
+  "schemaVersion": "1.0",
+  "id": "rutland-railroad",
+  "name": "Rutland Railroad",
+  "author": "FUSE",
+  "description": "Rutland Railroad terrain package generated from the active map profile.",
+  "map": {
+    "displayName": "Rutland Railroad",
+    "description": "The Rutland's Vermont main line: Bellows Falls over Mount Holly summit to Rutland, north through the Otter Creek valley to Burlington, and the Island Line across the Lake Champlain causeways to Alburgh. Terrain export follows a sparse railway corridor approximately ten 500 m tiles wide. The Bennington leg, Chatham branch, and Ogdensburg division are outside the map budget and are clipped by the line bounds.",
+    "mapFolder": "Map",
+    "suppressBaseWorld": true
+  },
+  "world": {
+    "spawnPoints": [
+      {
+        "name": "Rutland Railroad Spawn",
+        "position": {
+          "x": -8032.0,
+          "y": 662.0,
+          "z": -49600.0
+        },
+        "rotation": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0
+        },
+        "radius": 3.0,
+        "priority": 1000
+      }
+    ]
+  }
+}

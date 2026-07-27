@@ -1,0 +1,6 @@
+Railway geometry © OpenStreetMap contributors.
+OpenStreetMap data is available under the Open Database License (ODbL) 1.0.
+https://www.openstreetmap.org/copyright
+
+Elevation data: Mapbox Terrain-RGB.
+Land cover: U.S. Geological Survey NLCD 2021 via MRLC.

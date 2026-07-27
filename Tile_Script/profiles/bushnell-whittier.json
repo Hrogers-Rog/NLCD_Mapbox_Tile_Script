@@ -1,0 +1,26 @@
+{
+  "schemaVersion": 1,
+  "id": "bushnell-whittier",
+  "displayName": "Bushnell / Whittier (existing settings)",
+  "description": "Preserves the tile generator settings that predate map profile support.",
+  "origin": {
+    "latitude": 35.382614,
+    "longitude": -83.49541,
+    "eastBiasMeters": 8.0,
+    "northBiasMeters": -8.0
+  },
+  "terrain": {
+    "tileDimensionMeters": 500.0,
+    "mapboxZoom": 15,
+    "mapboxTileSize": 256,
+    "heightMinMeters": 500.0,
+    "heightMaxMeters": 1500.0,
+    "heightResolution": 513
+  },
+  "heightOffset": {
+    "mode": "linearX",
+    "eastTileX": -66,
+    "westTileX": -98,
+    "maxMeters": 40.0
+  }
+}
