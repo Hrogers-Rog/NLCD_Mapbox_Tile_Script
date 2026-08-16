@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "profile": "prr-middle-division",
-  "sourceGeoJson": "C:\\Hrogers_Railroader_mods_Projects\\NLCD_Mapbox_Tile_Script\\routes\\prr-main-ebt.geojson",
+  "sourceGeoJson": "<projects>\\NLCD_Mapbox_Tile_Script\\routes\\prr-main-ebt.geojson",
   "corridorWidthTiles": 10.0,
   "corridorWidthMeters": 5000.0,
   "tileCount": 6565,

@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "profile": "rutland-railroad",
-  "sourceGeoJson": "C:\\Hrogers_Railroader_mods_Projects\\NLCD_Mapbox_Tile_Script\\routes\\rutland-railroad.geojson",
+  "sourceGeoJson": "<projects>\\NLCD_Mapbox_Tile_Script\\routes\\rutland-railroad.geojson",
   "corridorWidthTiles": 10.0,
   "corridorWidthMeters": 5000.0,
   "tileCount": 5193,

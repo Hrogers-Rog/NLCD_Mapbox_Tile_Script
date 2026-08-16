@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "generatedAtUtc": "2026-07-19T07:11:42.239956+00:00",
-  "mapJson": "C:\\Hrogers_Railroader_mods_Projects\\NLCD_Mapbox_Tile_Script\\maps\\PRRMiddleDivision\\Map\\Map.json",
+  "mapJson": "<projects>\\NLCD_Mapbox_Tile_Script\\maps\\PRRMiddleDivision\\Map\\Map.json",
   "valid": true,
   "manifestTileCount": 6565,
   "uniqueManifestTileCount": 6565,

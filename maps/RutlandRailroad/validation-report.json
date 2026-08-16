@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "generatedAtUtc": "2026-07-20T04:01:38.063855+00:00",
-  "mapJson": "C:\\Hrogers_Railroader_mods_Projects\\NLCD_Mapbox_Tile_Script\\maps\\RutlandRailroad\\Map\\Map.json",
+  "mapJson": "<projects>\\NLCD_Mapbox_Tile_Script\\maps\\RutlandRailroad\\Map\\Map.json",
   "valid": false,
   "manifestTileCount": 5193,
   "uniqueManifestTileCount": 5193,
