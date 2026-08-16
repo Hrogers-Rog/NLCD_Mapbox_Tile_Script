@@ -1,9 +1,9 @@
 {
   "schemaVersion": 1,
-  "profile": "C:\\Hrogers_Railroader_mods_Projects\\NLCD_Mapbox_Tile_Script\\profiles\\prr-middle-division.json",
+  "profile": "<projects>\\NLCD_Mapbox_Tile_Script\\profiles\\prr-middle-division.json",
   "packageId": "prr-middle-division",
-  "packageDirectory": "C:\\Hrogers_Railroader_mods_Projects\\NLCD_Mapbox_Tile_Script\\maps\\PRRMiddleDivision",
-  "mapDirectory": "C:\\Hrogers_Railroader_mods_Projects\\NLCD_Mapbox_Tile_Script\\maps\\PRRMiddleDivision\\Map",
+  "packageDirectory": "<projects>\\NLCD_Mapbox_Tile_Script\\maps\\PRRMiddleDivision",
+  "mapDirectory": "<projects>\\NLCD_Mapbox_Tile_Script\\maps\\PRRMiddleDivision\\Map",
   "gameTileBounds": {
     "xMin": -216,
     "xMax": 152,
@@ -13,5 +13,5 @@
   "tileCount": 6565,
   "filenameMode": "signed",
   "heightOffsetMeters": 505.0,
-  "resumeCommand": "python get_tile_list.py \"C:\\Hrogers_Railroader_mods_Projects\\NLCD_Mapbox_Tile_Script\\maps\\PRRMiddleDivision\\Map\\Map.json\" --profile prr-middle-division --config Tile_Script\\config.json --cache-dir cache --output-dir \"C:\\Hrogers_Railroader_mods_Projects\\NLCD_Mapbox_Tile_Script\\maps\\PRRMiddleDivision\\Map\" --skip-existing --workers 8"
+  "resumeCommand": "python get_tile_list.py \"<projects>\\NLCD_Mapbox_Tile_Script\\maps\\PRRMiddleDivision\\Map\\Map.json\" --profile prr-middle-division --config Tile_Script\\config.json --cache-dir cache --output-dir \"<projects>\\NLCD_Mapbox_Tile_Script\\maps\\PRRMiddleDivision\\Map\" --skip-existing --workers 8"
 }

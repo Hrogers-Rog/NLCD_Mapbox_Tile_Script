@@ -1,9 +1,9 @@
 {
   "schemaVersion": 1,
-  "profile": "C:\\Hrogers_Railroader_mods_Projects\\NLCD_Mapbox_Tile_Script\\profiles\\rutland-railroad-1948.json",
+  "profile": "<projects>\\NLCD_Mapbox_Tile_Script\\profiles\\rutland-railroad-1948.json",
   "packageId": "rutland-railroad-1948",
-  "packageDirectory": "C:\\Hrogers_Railroader_mods_Projects\\NLCD_Mapbox_Tile_Script\\maps\\RutlandRailroad1948",
-  "mapDirectory": "C:\\Hrogers_Railroader_mods_Projects\\NLCD_Mapbox_Tile_Script\\maps\\RutlandRailroad1948\\Map",
+  "packageDirectory": "<projects>\\NLCD_Mapbox_Tile_Script\\maps\\RutlandRailroad1948",
+  "mapDirectory": "<projects>\\NLCD_Mapbox_Tile_Script\\maps\\RutlandRailroad1948\\Map",
   "gameTileBounds": {
     "xMin": -71,
     "xMax": 67,
@@ -13,5 +13,5 @@
   "tileCount": 3541,
   "filenameMode": "signed",
   "heightOffsetMeters": 505.0,
-  "resumeCommand": "python get_tile_list.py \"C:\\Hrogers_Railroader_mods_Projects\\NLCD_Mapbox_Tile_Script\\maps\\RutlandRailroad1948\\Map\\Map.json\" --profile rutland-railroad-1948 --config Tile_Script\\config.json --cache-dir cache --output-dir \"C:\\Hrogers_Railroader_mods_Projects\\NLCD_Mapbox_Tile_Script\\maps\\RutlandRailroad1948\\Map\" --skip-existing --workers 8"
+  "resumeCommand": "python get_tile_list.py \"<projects>\\NLCD_Mapbox_Tile_Script\\maps\\RutlandRailroad1948\\Map\\Map.json\" --profile rutland-railroad-1948 --config Tile_Script\\config.json --cache-dir cache --output-dir \"<projects>\\NLCD_Mapbox_Tile_Script\\maps\\RutlandRailroad1948\\Map\" --skip-existing --workers 8"
 }

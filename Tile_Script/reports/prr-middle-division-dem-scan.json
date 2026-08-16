@@ -4,7 +4,7 @@
   "profile": {
     "id": "prr-middle-division",
     "displayName": "PRR Middle Division + East Broad Top",
-    "path": "C:\\Hrogers_Railroader_mods_Projects\\NLCD_Mapbox_Tile_Script\\profiles\\prr-middle-division.json"
+    "path": "<projects>\\NLCD_Mapbox_Tile_Script\\profiles\\prr-middle-division.json"
   },
   "footprint": {
     "kind": "geographicRectangle",
@@ -28,7 +28,7 @@
     "tileCount": 12998,
     "cacheHits": 9027,
     "downloads": 3971,
-    "cacheDirectory": "C:\\Hrogers_Railroader_mods_Projects\\NLCD_Mapbox_Tile_Script\\cache",
+    "cacheDirectory": "<projects>\\NLCD_Mapbox_Tile_Script\\cache",
     "sampleCount": 831632165
   },
   "elevation": {

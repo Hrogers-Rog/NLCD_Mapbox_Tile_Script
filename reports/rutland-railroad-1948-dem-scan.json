@@ -4,11 +4,11 @@
   "profile": {
     "id": "rutland-railroad-1948",
     "displayName": "Rutland Railroad 1945-1948",
-    "path": "C:\\Hrogers_Railroader_mods_Projects\\NLCD_Mapbox_Tile_Script\\profiles\\rutland-railroad-1948.json"
+    "path": "<projects>\\NLCD_Mapbox_Tile_Script\\profiles\\rutland-railroad-1948.json"
   },
   "footprint": {
     "kind": "railroaderTileList",
-    "path": "C:\\Hrogers_Railroader_mods_Projects\\NLCD_Mapbox_Tile_Script\\routes\\rutland-railroad-1948-tiles.json",
+    "path": "<projects>\\NLCD_Mapbox_Tile_Script\\routes\\rutland-railroad-1948-tiles.json",
     "railroaderTileCount": 3541,
     "bounds": {
       "westLongitude": -73.28007253147128,
@@ -30,7 +30,7 @@
     "tileCount": 1527,
     "cacheHits": 1523,
     "downloads": 4,
-    "cacheDirectory": "C:\\Hrogers_Railroader_mods_Projects\\NLCD_Mapbox_Tile_Script\\cache",
+    "cacheDirectory": "<projects>\\NLCD_Mapbox_Tile_Script\\cache",
     "sampleCount": 74332588
   },
   "elevation": {

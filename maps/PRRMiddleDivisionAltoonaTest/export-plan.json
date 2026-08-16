@@ -1,9 +1,9 @@
 {
   "schemaVersion": 1,
-  "profile": "C:\\Hrogers_Railroader_mods_Projects\\NLCD_Mapbox_Tile_Script\\profiles\\prr-middle-division.json",
+  "profile": "<projects>\\NLCD_Mapbox_Tile_Script\\profiles\\prr-middle-division.json",
   "packageId": "prr-middle-division-altoona-test",
-  "packageDirectory": "C:\\Hrogers_Railroader_mods_Projects\\NLCD_Mapbox_Tile_Script\\maps\\PRRMiddleDivisionAltoonaTest",
-  "mapDirectory": "C:\\Hrogers_Railroader_mods_Projects\\NLCD_Mapbox_Tile_Script\\maps\\PRRMiddleDivisionAltoonaTest\\Map",
+  "packageDirectory": "<projects>\\NLCD_Mapbox_Tile_Script\\maps\\PRRMiddleDivisionAltoonaTest",
+  "mapDirectory": "<projects>\\NLCD_Mapbox_Tile_Script\\maps\\PRRMiddleDivisionAltoonaTest\\Map",
   "gameTileBounds": {
     "xMin": -120,
     "xMax": -111,
@@ -13,5 +13,5 @@
   "tileCount": 100,
   "filenameMode": "signed",
   "heightOffsetMeters": 456.0,
-  "resumeCommand": "python get_tile_area.py -120 -111 15 24 --profile prr-middle-division --config Tile_Script\\config.json --cache-dir cache --output-dir \"C:\\Hrogers_Railroader_mods_Projects\\NLCD_Mapbox_Tile_Script\\maps\\PRRMiddleDivisionAltoonaTest\\Map\" --signed-filenames --skip-existing --workers 8"
+  "resumeCommand": "python get_tile_area.py -120 -111 15 24 --profile prr-middle-division --config Tile_Script\\config.json --cache-dir cache --output-dir \"<projects>\\NLCD_Mapbox_Tile_Script\\maps\\PRRMiddleDivisionAltoonaTest\\Map\" --signed-filenames --skip-existing --workers 8"
 }
